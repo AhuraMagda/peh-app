@@ -1,5 +1,11 @@
 
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 @mixin flexCenter($direction: row) {
     display: flex;
     align-items: center;

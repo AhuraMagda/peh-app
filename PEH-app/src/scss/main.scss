@@ -36,7 +36,31 @@ main {
     margin-top: 10vh;
 }
 
+.home {
+    &__nav {
+        width: 100%;
+        @include flexCenter();
+        height: 10vh;
+    
+        button {
+            margin: 5px;
+            background-color: rgb(194, 144, 75);
+            padding: 10px;
+        }
+    }
+}
+
+
+
 .page-wrapper {
     width: 100%;
     @include flexCenter(column);
+}
+
+
+.product {
+    @include flexCenter(column);
+    img {
+        height: 200px;
+    }
 }
