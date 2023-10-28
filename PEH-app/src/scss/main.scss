@@ -1,0 +1,42 @@
+@import './config';
+
+.products {
+    @include flexCenter();
+    flex-wrap: wrap;
+    padding: 50px 20px;
+
+    &__product-card {
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        width: 300px;
+        margin: 10px;
+        justify-content: space-around;
+        border: 2px solid rgb(220, 133, 4);
+        border-radius: 10px;
+
+        img {
+            height: 150px;
+        }
+
+        &__text {
+            @include flexCenter(column)
+        }
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    @include flexCenter(column);
+    height: 10vh;
+}
+
+main {
+    margin-top: 10vh;
+}
+
+.page-wrapper {
+    width: 100%;
+    @include flexCenter(column);
+}
