@@ -16,7 +16,7 @@ function ProductCard() {
                 <Link to=".." relative="path">back</Link>
                 <img src={product.img} />
                 <h2>{product.name}</h2>
-                <h3>description</h3>
+                <p>{(product.ingredients).join(", ")}</p>
             </main>
         </>
     )

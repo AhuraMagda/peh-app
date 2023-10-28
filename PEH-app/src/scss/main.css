@@ -76,4 +76,11 @@ main {
 }
 .product img {
   height: 200px;
+}
+.product h2 {
+  padding: 10px;
+}
+.product p {
+  padding: 20px 0px;
+  max-width: 400px;
 }/*# sourceMappingURL=main.css.map */
