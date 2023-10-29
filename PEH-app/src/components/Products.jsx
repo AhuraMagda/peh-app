@@ -9,12 +9,12 @@ import { Link } from "react-router-dom"
 
 
 
-function Products({ typeFilter }) {
+function Products({ typeFilter, searchParams }) {
 
     const showMore = (id) => {
         console.log(id)
     }
-    
+    console.log(typeFilter)
     return (
         <>
             <div className="products">
@@ -22,13 +22,13 @@ function Products({ typeFilter }) {
                 .filter(product => typeFilter ? product.type === typeFilter : true)
                 .map(product => {
                     return (
-                        <Link to={`/${product.id}`}>
+                        <Link key={product.id} to={`/${product.id}`} state={{ search: `?${searchParams.toString()}` }}>
                             <div className="products__product-card" onClick={()=>showMore(product.id)}>
                                 <img src={`${product.img}`} alt="kallos" />
-                                    <div className="products__product-card__text">
-                                        <h2>{product.name}</h2>
-                                        <p>{product.type}</p>
-                                    </div>
+                                <div className="products__product-card__text">
+                                    <h2>{product.name}</h2>
+                                    <p>{product.type}</p>
+                                </div>
                             </div>
                         </Link>
                     )

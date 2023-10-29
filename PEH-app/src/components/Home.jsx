@@ -19,7 +19,7 @@ function Home() {
         </div>
 
         <div className='home__content'>
-            <Products typeFilter={typeFilter} />  
+            <Products typeFilter={typeFilter} searchParams={searchParams} />  
         </div>
 
     </main>
