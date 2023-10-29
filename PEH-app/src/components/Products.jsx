@@ -1,36 +1,31 @@
 
 
+import { Link, useSearchParams } from 'react-router-dom';
+import ProductsList from './ProductsList';
 
 
-
-
-import products from "../data/products";
-import { Link } from "react-router-dom"
-
-
-
-function Products({ typeFilter, searchParams }) {
+function Products() {
+    const [searchParams, setSearchParams] = useSearchParams();
+    const typeFilter = searchParams.get("type");
 
     return (
-        <>
-            <div className="products">
-                {products
-                .filter(product => typeFilter ? product.type === typeFilter : true)
-                .map(product => {
-                    return (
-                        <Link key={product.id} to={`/${product.id}`} state={{ search: searchParams.toString() }}>
-                            <div className="products__product-card">
-                                <img src={`${product.img}`} alt="kallos" />
-                                <div className="products__product-card__text">
-                                    <h2>{product.name}</h2>
-                                    <p>{product.type}</p>
-                                </div>
-                            </div>
-                        </Link>
-                    )
-                })}
-            </div>
-        </>
+  
+    <main className='home'>
+        <div className='home__nav'>
+            <Link to="..">HOME</Link>
+            <button onClick={()=>setSearchParams({type: "emolientowa"})}>emolietowe</button>
+            <button onClick={()=>setSearchParams({type: "proteinowa"})}>proteinowe</button>
+            <button onClick={()=>setSearchParams({type: "humektantowa"})}>humektantowe</button>
+            <button onClick={()=>setSearchParams({})}>wszystkie</button>
+        </div>
+
+        <div className='home__content'>
+            <ProductsList typeFilter={typeFilter} searchParams={searchParams} />  
+        </div>
+
+    </main>
+
+
     )
 }
 

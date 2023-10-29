@@ -1,30 +1,15 @@
 
 
-import { useSearchParams } from 'react-router-dom';
-import Products from './Products';
+import { Link } from "react-router-dom"
+
 
 
 function Home() {
-    const [searchParams, setSearchParams] = useSearchParams();
-    const typeFilter = searchParams.get("type");
-
     return (
-  
-    <main className='home'>
-        <div className='home__nav'>
-            <button onClick={()=>setSearchParams({type: "emolientowa"})}>emolietowe</button>
-            <button onClick={()=>setSearchParams({type: "proteinowa"})}>proteinowe</button>
-            <button onClick={()=>setSearchParams({type: "humektantowa"})}>humektantowe</button>
-            <button onClick={()=>setSearchParams({})}>wszystkie</button>
-        </div>
-
-        <div className='home__content'>
-            <Products typeFilter={typeFilter} searchParams={searchParams} />  
-        </div>
-
-    </main>
-
-
+        <main>
+            <h2>This is a home page</h2>
+            <Link to="/products">Sprawdź odżywki</Link>
+        </main>
     )
 }
 
