@@ -11,10 +11,6 @@ import { Link } from "react-router-dom"
 
 function Products({ typeFilter, searchParams }) {
 
-    const showMore = (id) => {
-        console.log(id)
-    }
-    console.log(typeFilter)
     return (
         <>
             <div className="products">
@@ -22,8 +18,8 @@ function Products({ typeFilter, searchParams }) {
                 .filter(product => typeFilter ? product.type === typeFilter : true)
                 .map(product => {
                     return (
-                        <Link key={product.id} to={`/${product.id}`} state={{ search: `?${searchParams.toString()}` }}>
-                            <div className="products__product-card" onClick={()=>showMore(product.id)}>
+                        <Link key={product.id} to={`/${product.id}`} state={{ search: searchParams.toString() }}>
+                            <div className="products__product-card">
                                 <img src={`${product.img}`} alt="kallos" />
                                 <div className="products__product-card__text">
                                     <h2>{product.name}</h2>
