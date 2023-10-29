@@ -13,15 +13,15 @@ function ProductsList({ typeFilter, searchParams }) {
 
     return (
         <>
-            <div className="products">
+            <div className="products-list">
                 {products
                 .filter(product => typeFilter ? product.type === typeFilter : true)
                 .map(product => {
                     return (
                         <Link key={product.id} to={`/products/${product.id}`} state={{ search: searchParams.toString() }}>
-                            <div className="products__product-card">
+                            <div className="products-list__product-card">
                                 <img src={`${product.img}`} alt="kallos" />
-                                <div className="products__product-card__text">
+                                <div className="products-list__product-card__text">
                                     <h2>{product.name}</h2>
                                     <p>{product.type}</p>
                                 </div>

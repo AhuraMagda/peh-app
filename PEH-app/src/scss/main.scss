@@ -1,6 +1,6 @@
 @import './config';
 
-.products {
+.products-list {
     @include flexCenter();
     flex-wrap: wrap;
     padding: 50px 20px;
@@ -30,13 +30,16 @@ header {
     top: 0;
     @include flexCenter(column);
     height: 10vh;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(146, 83, 144);
 }
 
 main {
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
-.home {
+.products-page {
     &__nav {
         width: 100%;
         @include flexCenter();
@@ -50,7 +53,35 @@ main {
     }
 }
 
+.home {
+    &__intro {
+        border: 1px solid rgb(146, 83, 144);
+        padding: 20px;
+        border-radius: 20px;
 
+        h2 {
+            color: rgb(146, 83, 144);
+        }
+        p {
+            max-width: 500px;
+            padding: 20px 0px;
+        }
+        button {
+            padding: 20px;
+            color: white;
+            border: 1px solid white;
+            background-color: rgb(169, 116, 167);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 500ms;
+        }
+        button:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(169, 116, 167);
+            border: 1px solid rgb(169, 116, 167);
+        }
+    }
+}
 
 .page-wrapper {
     width: 100%;
