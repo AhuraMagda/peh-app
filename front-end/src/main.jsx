@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Products from "./components/Products.jsx";
 import ProductsList from "./components/ProductsList.jsx";
+import ProductCard from "./components/ProductCard.jsx"
 
 const router = createBrowserRouter([
   {
@@ -30,14 +31,21 @@ const router = createBrowserRouter([
             }
           },
           {
-            path: "/products/:type",
+            path: "/products/:typeId",
             element: <ProductsList />,
             loader: ({params}) => {
-              return fetch(`http://localhost:3000/products?type=${params.type}`);
+              return fetch(`http://localhost:3000/products?type=${params.typeId}`);
             },
-          }
+          },
         ]
       },
+      {
+        path: "/product/:productId",
+        element: <ProductCard />,
+        loader: ({params}) => {
+          return fetch(`http://localhost:3000/products/${params.productId}`);
+        },
+      }
     ],
   },
 ]);

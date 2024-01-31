@@ -11,7 +11,7 @@ function ProductsList() {
             return (
               <Link
                 key={product.id}
-                to={`/products/${product.id}`}
+                to={`/product/${product.id}`}
               >
                 <div className="products-list__product-card">
                   <img src={`${product.img}`} alt="kallos" />
