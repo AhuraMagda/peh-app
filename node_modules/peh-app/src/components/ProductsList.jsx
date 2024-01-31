@@ -1,21 +1,17 @@
 import { Link, useLoaderData } from "react-router-dom";
 
-function ProductsList({ typeFilter, searchParams }) {
+function ProductsList() {
   const products = useLoaderData();
 
   return (
     <>
       <div className="products-list">
         {products
-          .filter((product) =>
-            typeFilter ? product.type === typeFilter : true
-          )
           .map((product) => {
             return (
               <Link
                 key={product.id}
                 to={`/products/${product.id}`}
-                state={{ search: searchParams.toString() }}
               >
                 <div className="products-list__product-card">
                   <img src={`${product.img}`} alt="kallos" />

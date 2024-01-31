@@ -1,30 +1,30 @@
-import { Link, useSearchParams } from "react-router-dom";
-import ProductsList from "./ProductsList";
+import { Link, Outlet} from "react-router-dom";
+
 
 function Products() {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const typeFilter = searchParams.get("type");
-
   return (
     <main className="products-page">
       <div className="products-page__nav">
         <Link to="..">
           <button>HOME</button>
         </Link>
-        <button onClick={() => setSearchParams({ type: "emolientowa" })}>
+        {/* TODO use redirect */}
+        <Link to="/products/emolientowa" >
           emolietowe
-        </button>
-        <button onClick={() => setSearchParams({ type: "proteinowa" })}>
+        </Link>
+        <Link to="/products/proteinowa" >
           proteinowe
-        </button>
-        <button onClick={() => setSearchParams({ type: "humektantowa" })}>
+        </Link>
+        <Link to="/products/humektantowa" >
           humektantowe
-        </button>
-        <button onClick={() => setSearchParams({})}>wszystkie</button>
+        </Link>
+        <Link to="/products" >
+          wszystkie
+        </Link>
       </div>
 
       <div className="products-page__content">
-        <ProductsList typeFilter={typeFilter} searchParams={searchParams} />
+        <Outlet />
       </div>
     </main>
   );

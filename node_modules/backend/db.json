@@ -1,21 +1,30 @@
 {
+    "types": [
+        {
+            "name": "emolietnowa",
+            "id": 1
+        },
+        {
+            "name": "proteinowa",
+            "id": 2
+        },        
+        {
+            "name": "humektantowa",
+            "id": 3
+        }
+    ],
+
     "products": [
         {
-            "id": 1,
+            "id": "1",
             "name": "Protox",
             "type": "proteinowa",
             "img": "images/kallos-protox.jpeg",
             "ingredients": ["Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Olea Europaea Oil", "Cocos Nucifera Oil", "Parfum", "Cyclopentasiloxane", "Dimethiconol", "Panthenol", "Hydrolized Keratin", "Soluble Collagen", "Sodium Hyaluronate", "Citric Acid", "Propylene Glycol", "Benzyl Alcohol", "Methylchloroisothiazolinone", "Methylisothiazolinone"]
         },
+        
         {
-            "id": 2,
-            "name": "Vanilla",
-            "type": "proteinowa",
-            "img": "images/kallos-vanilla.jpg",
-            "ingredients": ["Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Propylene Glycol", "Hydrogenated Polysorbutene", "Parfum", "Panthenol", "Dimethicone", "Hydrolized Milk Protein", "Cyclopentasiloxane", "Methylchloroisothiazolinone", "Methylisothiazolinone"]
-        },
-        {
-            "id": 3,
+            "id": "2",
             "name": "Algae",
             "type": "emolientowa",
             "img": "images/kallos-algae.jpeg",
@@ -27,7 +36,7 @@
               ]
         },
         {
-            "id": 4,
+            "id": "3",
             "name": "Banana",
             "type": "emolientowa",
             "img": "images/kallos-banana.jpeg",
@@ -40,7 +49,7 @@
               ]
         },
         {
-            "id": 5,
+            "id": "4",
             "name": "Aloe",
             "type": "humektantowa",
             "img": "images/kallos-aloe.jpeg",
@@ -51,7 +60,7 @@
               ]
         },
         {
-            "id": 6,
+            "id": "5",
             "name": "Honey",
             "type": "humektantowa",
             "img": "images/kallos-honey.jpeg",
@@ -62,7 +71,7 @@
               ]          
         },
         {
-            "id": 7,
+            "id": "6",
             "name": "Latte",
             "type": "proteinowa",
             "img": "images/kallos-latte.jpg",
@@ -73,7 +82,7 @@
               ]          
         },
         {
-            "id": 8,
+            "id": "7",
             "name": "Milk",
             "type": "proteinowa",
             "img": "images/kallos-milk.jpeg",
@@ -84,7 +93,7 @@
               ]          
         },
         {
-            "id": 9,
+            "id": "8",
             "name": "Keratin",
             "type": "proteinowa",
             "img": "images/kallos-keratin.jpeg",
@@ -96,7 +105,7 @@
               
         },
         {
-            "id": 10,
+            "id": "9",
             "name": "Chocolate",
             "type": "proteinowa",
             "img": "images/kallos-chocolate.jpg",

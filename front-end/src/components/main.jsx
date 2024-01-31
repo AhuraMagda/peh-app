@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Products from "./components/Products.jsx";
-import ProductsList from "./components/ProductsList.jsx";
+import ProductCard from "./components/ProductCard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,24 +19,18 @@ const router = createBrowserRouter([
         path: "/products",
         element: <Products />,
         loader: () => {
-          return fetch(`http://localhost:3000/products`);
+          return fetch("http://localhost:3000/products");
         },
-        children: [
-          {
-            path: "/products",
-            element: <ProductsList />,
-            loader: () => {
-              return fetch(`http://localhost:3000/products`);
-            }
-          },
-          {
-            path: "/products/:type",
-            element: <ProductsList />,
-            loader: ({params}) => {
-              return fetch(`http://localhost:3000/products?type=${params.type}`);
-            },
-          }
-        ]
+      },
+      {
+        path: "/products/:productId",
+        element: <ProductCard />,
+        loader: ({ params }) => {
+          console.log(params)
+          return fetch(
+            `http://localhost:3000/products/${params.productId}`
+          );
+        },
       },
     ],
   },
