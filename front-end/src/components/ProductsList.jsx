@@ -1,7 +1,8 @@
-import products from "../data/products";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 function ProductsList({ typeFilter, searchParams }) {
+  const products = useLoaderData();
+
   return (
     <>
       <div className="products-list">
