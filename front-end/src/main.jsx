@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home.jsx";
-import Products from "./components/Products.jsx";
+import ProductsNav from "./components/ProductsNav.jsx";
 import ProductsList from "./components/ProductsList.jsx";
 import ProductCard from "./components/ProductCard.jsx"
 
+// zagnieździć produkt pod typem
 const router = createBrowserRouter([
   {
     element: <App />,
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/products",
-        element: <Products />,
+        element: <ProductsNav />,
         loader: () => {
           return fetch(`http://localhost:3000/products`);
         },

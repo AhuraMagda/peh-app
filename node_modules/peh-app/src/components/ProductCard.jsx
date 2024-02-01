@@ -9,7 +9,7 @@ function ProductCard() {
   return (
     <>
         <main className="product">    
-        <Link to="..">
+        <Link to="/products">
         wróc
         </Link>
         <img src={`../${product.img}`} />
