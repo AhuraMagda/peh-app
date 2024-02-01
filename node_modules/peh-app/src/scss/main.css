@@ -40,10 +40,21 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
   color: rgb(0, 0, 0);
   background-color: rgb(146, 83, 144);
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  padding: 10px;
+  list-style: none;
+}
+nav ul li a {
+  color: white;
 }
 
 main {
@@ -67,6 +78,7 @@ main {
 .home__intro {
   border: 1px solid rgb(146, 83, 144);
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 20px;
 }
 .home__intro h2 {
@@ -114,4 +126,4 @@ main {
 .product p {
   padding: 20px 0px;
   max-width: 400px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

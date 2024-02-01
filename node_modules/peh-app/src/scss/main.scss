@@ -29,10 +29,24 @@ header {
   position: fixed;
   top: 0;
   @include flexCenter(column);
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
   color: rgb(0, 0, 0);
   background-color: rgb(146, 83, 144);
+}
+
+nav {
+  ul {
+    display: flex;
+    li {
+      padding: 10px;
+      list-style: none;
+      
+      a {
+        color: white;
+      }
+    }
+  }
 }
 
 main {
@@ -57,6 +71,7 @@ main {
   &__intro {
     border: 1px solid rgb(146, 83, 144);
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
 
     h2 {

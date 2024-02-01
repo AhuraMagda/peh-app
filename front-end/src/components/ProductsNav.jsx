@@ -1,16 +1,23 @@
 import { Link, Outlet } from "react-router-dom";
 
+// TODO add "<- wróć" only when one product is opened
+
 function ProductsNav() {
   return (
     <main className="products-page">
       <div className="products-page__nav">
-        <Link to="..">
-          <button>HOME</button>
+        <Link to="/products/emolientowa">
+          <button>emolietowe</button>
         </Link>
-        <Link to="/products/emolientowa">emolietowe</Link>
-        <Link to="/products/proteinowa">proteinowe</Link>
-        <Link to="/products/humektantowa">humektantowe</Link>
-        <Link to="/products">wszystkie</Link>
+        <Link to="/products/proteinowa">
+          <button>proteinowe</button>
+        </Link>
+        <Link to="/products/humektantowa">
+          <button>humektantowe</button>
+        </Link>
+        <Link to="/products">
+          <button>wszystkie</button>
+        </Link>
       </div>
 
       <div className="products-page__content">

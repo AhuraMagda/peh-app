@@ -11,8 +11,27 @@ function Home() {
           były one mocne, nawilżone, sprężyste i gładkie. PEH jest skrótem
           kolejno od: protein (P), emolientów (E) i humektantów (H)
         </p>
+        <Link to="/about">
+          <button>Dowiedz się więcej</button>
+        </Link>
+      </div>
+      <div className="home__intro">
+        <h2>Jakich składników potrzebuję?</h2>
+        <p>
+          Odpowiedz na pytania i zobacz czego potrzebują Twoje włosy.
+        </p>
+        <Link to="/test">
+          <button>Zrób test</button>
+        </Link>
+
+      </div>
+      <div className="home__intro">
+        <h2>Jak znaleźć odżywkę?</h2>
+        <p>
+          Sprawdź wyszukiwarkę odżywek po type.
+        </p>
         <Link to="/products">
-          <button>Sprawdź odżywki</button>
+          <button>Wyszukaj odżywkę</button>
         </Link>
       </div>
     </main>

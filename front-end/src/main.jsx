@@ -6,6 +6,8 @@ import Home from "./components/Home.jsx";
 import ProductsNav from "./components/ProductsNav.jsx";
 import ProductsList from "./components/ProductsList.jsx";
 import ProductCard from "./components/ProductCard.jsx";
+import About from "./components/About.jsx";
+import Test from "./components/Test.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/test",
+        element: <Test />,
       },
       {
         path: "/products",

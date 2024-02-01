@@ -1,13 +1,13 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 function ProductCard() {
-  // TODO wróc wraca do wszystkich lub typów w zależności od poprzedniej
+  // TODO dodać komentarze + ocenę?
   const product = useLoaderData();
-  console.log(product);
+  let navigate = useNavigate();
   return (
     <>
       <main className="product">
-        <Link to="/products">wróc</Link>
+        <button onClick={()=>navigate(-1)}>wróć</button>
         <img src={`/${product.img}`} />
         <h2>{product.name}</h2>
         <p>{product.ingredients.join(", ")}</p>
