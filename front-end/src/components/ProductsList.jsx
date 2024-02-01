@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 
 function ProductsList() {
   const products = useLoaderData();
@@ -11,10 +11,10 @@ function ProductsList() {
             return (
               <Link
                 key={product.id}
-                to={`/product/${product.id}`}
+                to={`/products/${product.type}/${product.id}`}
               >
                 <div className="products-list__product-card">
-                  <img src={`${product.img}`} alt="kallos" />
+                  <img src={`/${product.img}`} alt="kallos" />
                   <div className="products-list__product-card__text">
                     <h2>{product.name}</h2>
                     <p>{product.type}</p>
@@ -24,6 +24,7 @@ function ProductsList() {
             );
           })}
       </div>
+      <Outlet />
     </>
   );
 }

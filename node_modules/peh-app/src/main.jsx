@@ -5,9 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import ProductsNav from "./components/ProductsNav.jsx";
 import ProductsList from "./components/ProductsList.jsx";
-import ProductCard from "./components/ProductCard.jsx"
+import ProductCard from "./components/ProductCard.jsx";
 
-// zagnieździć produkt pod typem
 const router = createBrowserRouter([
   {
     element: <App />,
@@ -29,24 +28,29 @@ const router = createBrowserRouter([
             element: <ProductsList />,
             loader: () => {
               return fetch(`http://localhost:3000/products`);
-            }
+            },
           },
           {
             path: "/products/:typeId",
             element: <ProductsList />,
-            loader: ({params}) => {
-              return fetch(`http://localhost:3000/products?type=${params.typeId}`);
+            loader: ({ params }) => {
+              return fetch(
+                `http://localhost:3000/products?type=${params.typeId}`
+              );
             },
           },
-        ]
+          {
+            path: "/products/:typeId/:productId",
+            element: <ProductCard />,
+            loader: ({ params }) => {
+              console.log(params);
+              return fetch(
+                `http://localhost:3000/products/${params.productId}`
+              );
+            },
+          },
+        ],
       },
-      {
-        path: "/product/:productId",
-        element: <ProductCard />,
-        loader: ({params}) => {
-          return fetch(`http://localhost:3000/products/${params.productId}`);
-        },
-      }
     ],
   },
 ]);

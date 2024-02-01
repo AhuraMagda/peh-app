@@ -1,5 +1,4 @@
-import { Link, Outlet} from "react-router-dom";
-
+import { Link, Outlet } from "react-router-dom";
 
 function ProductsNav() {
   return (
@@ -8,18 +7,10 @@ function ProductsNav() {
         <Link to="..">
           <button>HOME</button>
         </Link>
-        <Link to="/products/emolientowa" >
-          emolietowe
-        </Link>
-        <Link to="/products/proteinowa" >
-          proteinowe
-        </Link>
-        <Link to="/products/humektantowa" >
-          humektantowe
-        </Link>
-        <Link to="/products" >
-          wszystkie
-        </Link>
+        <Link to="/products/emolientowa">emolietowe</Link>
+        <Link to="/products/proteinowa">proteinowe</Link>
+        <Link to="/products/humektantowa">humektantowe</Link>
+        <Link to="/products">wszystkie</Link>
       </div>
 
       <div className="products-page__content">
