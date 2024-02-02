@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <div className="page-wrapper">
+    <div className="w-full flex justify-center items-center flex-col">
       <header>
         <h1>Znajdź odżywkę jakiej potrzebujesz</h1>
         <nav>

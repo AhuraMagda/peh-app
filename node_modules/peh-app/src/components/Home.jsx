@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <main className="home">
-      <div className="home__intro">
-        <h2>Czym jest PEH?</h2>
-        <p>
+    <main className="mt-20vh">
+      <div className="border-2 border-solid border-fuchsia-400 rounded-3xl p-20">
+        <h2 className="text-fuchsia-400">Czym jest PEH?</h2>
+        <p className="max-w-lg py-20">
           Równowaga PEH to nic innego, jak właściwy balans trzech podstawowych
           składników, które musisz uwzględnić w swojej pielęgnacji włosów, by
           były one mocne, nawilżone, sprężyste i gładkie. PEH jest skrótem
@@ -15,9 +15,9 @@ function Home() {
           <button>Dowiedz się więcej</button>
         </Link>
       </div>
-      <div className="home__intro">
-        <h2>Jakich składników potrzebuję?</h2>
-        <p>
+      <div className="border-2 border-solid border-fuchsia-400 rounded-3xl p-20">
+        <h2 className="text-fuchsia-400">Jakich składników potrzebuję?</h2>
+        <p className="max-w-lg py-20">
           Odpowiedz na pytania i zobacz czego potrzebują Twoje włosy.
         </p>
         <Link to="/test">
@@ -25,13 +25,13 @@ function Home() {
         </Link>
 
       </div>
-      <div className="home__intro">
-        <h2>Jak znaleźć odżywkę?</h2>
-        <p>
+      <div className="border-2 border-solid border-fuchsia-400 rounded-3xl p-20">
+        <h2 className="text-fuchsia-400">Jak znaleźć odżywkę?</h2>
+        <p className="max-w-lg py-20">
           Sprawdź wyszukiwarkę odżywek po type.
         </p>
         <Link to="/products">
-          <button>Wyszukaj odżywkę</button>
+          <button className="p-7 text-white border-1 border-solid border-white bg-fuchsia-400 rounded-2xl cursor-pointer">Wyszukaj odżywkę</button>
         </Link>
       </div>
     </main>
