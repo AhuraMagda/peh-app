@@ -5,14 +5,12 @@ function ProductCard() {
   const product = useLoaderData();
   let navigate = useNavigate();
   return (
-    <>
-      <main className="product">
-        <button onClick={()=>navigate(-1)}>wróć</button>
-        <img src={`/${product.img}`} />
-        <h2>{product.name}</h2>
-        <p>{product.ingredients.join(", ")}</p>
-      </main>
-    </>
+    <div className="flex justify-center items-center flex-col">
+      <button onClick={() => navigate(-1)}>wróć</button>
+      <img src={`/${product.img}`} className="h-48" />
+      <h2 className="p-2.5 text-2xl">{product.name}</h2>
+      <p className="py-6 max-w-sm">{product.ingredients.join(", ")}</p>
+    </div>
   );
 }
 

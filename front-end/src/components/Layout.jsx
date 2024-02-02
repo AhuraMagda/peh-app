@@ -13,7 +13,7 @@ function Layout() {
   return (
     <div className="w-full flex justify-center items-center flex-col ">
       <header className="fixed top-0 flex justify-center items-center flex-col w-full bg-main min-h-20vh">
-        <h1 className="text-3xl pt-10">Znajdź odżywkę jakiej potrzebujesz</h1>
+        <h1 className="text-4xl pt-10">Znajdź odżywkę jakiej potrzebujesz</h1>
         <nav>
           <ul className="flex">
             {navLinks.map((navLink) => (
