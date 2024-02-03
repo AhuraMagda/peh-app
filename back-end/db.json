@@ -130,15 +130,43 @@
     "comments": [
         {
             "id": 1,
+            "title": "grejt",
+            "author": "Ania",
             "rating": 5,
-            "comment": "Superaśna odżywka loveee",
+            "text": "Superaśna odżywka loveee",
             "productId": 1
         },
         {
             "id": 2,
+            "title": "Very bad",
+            "author": "Maja",
             "rating": 2,
-            "comment": "Boooo, odpadły mi włosy po niej",
-            "productId": 2
+            "text": "Boooo, odpadły mi włosy po niej",
+            "productId": 3
+        },
+        {
+            "id": 3,
+            "title": "Ehh",
+            "author": "Skylar Grey",
+            "rating": 2,
+            "text": "tralalala",
+            "productId": 1
+        },
+        {
+            "id": 4,
+            "title": "Ehh",
+            "author": "Skylar Grey",
+            "rating": 2,
+            "text": "tralalala",
+            "productId": 4
+        },
+        {
+            "id": 5,
+            "title": "Ehh",
+            "author": "Skylar Grey",
+            "rating": 2,
+            "text": "tralalala",
+            "productId": 3
         }
     ]
 }
