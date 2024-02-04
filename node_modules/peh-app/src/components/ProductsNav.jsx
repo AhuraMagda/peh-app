@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 
 function ProductsNav() {
   return (
-    <main className="mt-20vh pt-10">
+    <main className="mt-20vh pt-10 mb-10vh">
       <div className="w-full flex justify-center items-center h-20vh">
         <Link to="/products/emolientowa">
           <button className="m-5 bg-amber-400 p-2">emolietowe</button>

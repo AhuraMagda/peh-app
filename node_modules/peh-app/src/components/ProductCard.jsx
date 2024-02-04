@@ -14,7 +14,7 @@ function ProductCard() {
   const product = useLoaderData();
   let navigate = useNavigate();
   return (
-    <>
+    <div className="mb-10">
       <div className="flex justify-center items-center flex-col">
         <button onClick={() => navigate(-1)}>wróć</button>
         <img src={`/${product.img}`} className="h-48" />
@@ -28,7 +28,7 @@ function ProductCard() {
       ) : (
         <button onClick={handleShowComments}>pokaż komentarze </button>
       )}
-    </>
+    </div>
   );
 }
 

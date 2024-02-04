@@ -10,7 +10,8 @@ export default {
         'main': '#925390'
       },
       spacing: {
-        '20vh': '20vh'
+        '20vh': '20vh',
+        '10vh': '10vh'
       }
     },
   },
