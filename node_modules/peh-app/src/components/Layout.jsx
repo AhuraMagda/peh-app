@@ -3,24 +3,26 @@ import { Link, Outlet } from "react-router-dom";
 // TODO zmienić na navlink
 
 function Layout() {
+  const navLinks = [
+    { path: "/", name: "home" },
+    { path: "/about", name: "opis" },
+    { path: "/test", name: "test" },
+    { path: "/products", name: "wyszukiwarka" },
+  ];
+
   return (
-    <div className="page-wrapper">
-      <header>
-        <h1>Znajdź odżywkę jakiej potrzebujesz</h1>
+    <div className="w-full flex justify-center items-center flex-col ">
+      <header className="fixed top-0 flex justify-center items-center flex-col w-full bg-main min-h-20vh">
+        <h1 className="text-4xl pt-10">Znajdź odżywkę jakiej potrzebujesz</h1>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">home</Link>
-            </li>
-            <li>
-              <Link to="/about">opis</Link>
-            </li>
-            <li>
-              <Link to="/test">test</Link>
-            </li>
-            <li>
-              <Link to="/products">wyszukiwarka</Link>
-            </li>
+          <ul className="flex">
+            {navLinks.map((navLink) => (
+              <li key={navLink.name} className="p-10">
+                <Link className="text-white" to={navLink.path}>
+                  {navLink.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </header>

@@ -4,23 +4,23 @@ import { Link, Outlet } from "react-router-dom";
 
 function ProductsNav() {
   return (
-    <main className="products-page">
-      <div className="products-page__nav">
+    <main className="mt-20vh pt-10">
+      <div className="w-full flex justify-center items-center h-20vh">
         <Link to="/products/emolientowa">
-          <button>emolietowe</button>
+          <button className="m-5 bg-amber-400 p-2">emolietowe</button>
         </Link>
         <Link to="/products/proteinowa">
-          <button>proteinowe</button>
+          <button className="m-5 bg-amber-400 p-2">proteinowe</button>
         </Link>
         <Link to="/products/humektantowa">
-          <button>humektantowe</button>
+          <button className="m-5 bg-amber-400 p-2">humektantowe</button>
         </Link>
         <Link to="/products">
-          <button>wszystkie</button>
+          <button className="m-5 bg-amber-400 p-2">wszystkie</button>
         </Link>
       </div>
 
-      <div className="products-page__content">
+      <div>
         <Outlet />
       </div>
     </main>

@@ -1,4 +1,3 @@
-import "./scss/main.css";
 import Layout from "./components/Layout";
 import { Outlet } from "react-router-dom";
 
