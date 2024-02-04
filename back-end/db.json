@@ -1,172 +1,272 @@
 {
-    "types": [
-        {
-            "name": "emolietnowa",
-            "id": 1
-        },
-        {
-            "name": "proteinowa",
-            "id": 2
-        },        
-        {
-            "name": "humektantowa",
-            "id": 3
-        }
-    ],
-
-    "products": [
-        {
-            "id": "1",
-            "name": "Protox",
-            "type": "proteinowa",
-            "typeId": 2,
-            "img": "images/kallos-protox.jpeg",
-            "ingredients": ["Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Olea Europaea Oil", "Cocos Nucifera Oil", "Parfum", "Cyclopentasiloxane", "Dimethiconol", "Panthenol", "Hydrolized Keratin", "Soluble Collagen", "Sodium Hyaluronate", "Citric Acid", "Propylene Glycol", "Benzyl Alcohol", "Methylchloroisothiazolinone", "Methylisothiazolinone"]
-        },
-        
-        {
-            "id": "2",
-            "name": "Algae",
-            "type": "emolientowa",
-            "typeId": 1,
-            "img": "images/kallos-algae.jpeg",
-            "ingredients": [
-                "Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Olea Europaea Oil", "Parfum", "Citric Acid",
-                "Cyclopentasiloxane", "Dimethiconol", "Propylene Glycol", "Fucus Vesiculosus Extract",
-                "Laminaria Digitata Extract", "Spirulina Maxima Extract", "Porphyra Umbilicalis Extract",
-                "Ascophyllum Nodosum Extract", "Benzyl Alcohol", "Methylchloroisothiazolinone", "Methylisothiazolinone"
-              ]
-        },
-        {
-            "id": "3",
-            "name": "Banana",
-            "type": "emolientowa",
-            "typeId": 1,
-            "img": "images/kallos-banana.jpeg",
-            "ingredients": [
-                "Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Olea Europaea Oil", "Parfum", "Citric Acid",
-                "Cyclopentasiloxane", "Dimethiconol", "Propylene Glycol", "Musa Sapientium Fruit Extract",
-                "Niacinamide", "Calcium Pantothenate", "Sodium Acsorbyl Phosphate", "Tocopheryl Acetate",
-                "Pyridoxine HCI", "Maltrodextrin Sodium Starch", "Octenylsuccinate Silica", "Benzyl Alcohol",
-                "Methylchloroisothiazolinone", "Methylisothiazolinone"
-              ]
-        },
-        {
-            "id": "4",
-            "name": "Aloe",
-            "type": "humektantowa",
-            "typeId": 3,
-            "img": "images/kallos-aloe.jpeg",
-            "ingredients": [
-                "Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Aloe Barbadensis Leaf Juice", "Parfum",
-                "Citric Acid", "Cyclopentasiloxane", "Propylene Glycol", "Benzyl Alcohol",
-                "Methylchloroisothiazolinone", "Methylisothiazolinone"
-              ]
-        },
-        {
-            "id": "5",
-            "name": "Honey",
-            "type": "humektantowa",
-            "typeId": 3,
-            "img": "images/kallos-honey.jpeg",
-            "ingredients": [
-                "Aqua", "Propylene Glycol", "Myristyl Alcohol", "Cetrimonium Chloride", "Dimethicone", 
-                "Mel", "Methylchloroisothiazolinone", "Methylisothiazolinone", "EDTA", "Ascorbic Acid", 
-                "Parfum", "Cl 19140", "Benzyl Salicylate"
-              ]          
-        },
-        {
-            "id": "6",
-            "name": "Latte",
-            "type": "proteinowa",
-            "typeId": 2,
-            "img": "images/kallos-latte.jpg",
-            "ingredients": [
-                "Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Parfum", "Citric Acid",
-                "Propylene Glycol", "Hydrolyzed Milk Protein", "Cyclopentasiloxane", "Dimethiconol",
-                "Benzyl Alcohol", "Methylchloroisothiazolinone", "Methylisothiazolinone"
-              ]          
-        },
-        {
-            "id": "7",
-            "name": "Milk",
-            "type": "proteinowa",
-            "typeId": 2,
-            "img": "images/kallos-milk.jpeg",
-            "ingredients": [
-                "Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Citric Acid", "Propylene Glycol",
-                "Hydrolyzed Milk Protein", "Cyclopentasiloxane", "Dimethiconol", "Parfum",
-                "Benzyl Alcohol", "Methylchloroisothiazolinone", "Methylisothiazolinone"
-              ]          
-        },
-        {
-            "id": "8",
-            "name": "Keratin",
-            "type": "proteinowa",
-            "typeId": 2,
-            "img": "images/kallos-keratin.jpeg",
-            "ingredients": [
-                "Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Citric Acid", "Propylene Glycol",
-                "Hydrolyzed Milk Protein", "Hydrolyzed Keratin", "Cyclopentasiloxane", "Dimethiconol", "Parfum",
-                "Benzyl Alcohol", "Methylchloroisothiazolinone", "Methylisothiazolinone"
-              ]
-              
-        },
-        {
-            "id": "9",
-            "name": "Chocolate",
-            "type": "proteinowa",
-            "typeId": 2,
-            "img": "images/kallos-chocolate.jpg",
-            "ingredients": [
-                "Aqua", "Cetearyl Alcohol", "Cetrimonium Chloride", "Propylene Glycol", "Hydrogenated Polysorbate",
-                "Parfum", "Cyclopentasiloxane", "Dimethiconol", "Panthenol", "Theobroma Cacao Extract",
-                "Hydrolyzed Keratin", "Hydrolyzed Milk Protein", "Citric Acid", "Benzyl Alcohol",
-                "Methylchloroisothiazolinone", "Methylisothiazolinone"
-              ]
-              
-        }          
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "title": "grejt",
-            "author": "Ania",
-            "rating": 5,
-            "text": "Superaśna odżywka loveee",
-            "productId": 1
-        },
-        {
-            "id": 2,
-            "title": "Very bad",
-            "author": "Maja",
-            "rating": 2,
-            "text": "Boooo, odpadły mi włosy po niej",
-            "productId": 3
-        },
-        {
-            "id": 3,
-            "title": "Ehh",
-            "author": "Skylar Grey",
-            "rating": 2,
-            "text": "tralalala",
-            "productId": 1
-        },
-        {
-            "id": 4,
-            "title": "Ehh",
-            "author": "Skylar Grey",
-            "rating": 2,
-            "text": "tralalala",
-            "productId": 4
-        },
-        {
-            "id": 5,
-            "title": "Ehh",
-            "author": "Skylar Grey",
-            "rating": 2,
-            "text": "tralalala",
-            "productId": 3
-        }
-    ]
+  "types": [
+    {
+      "name": "emolietnowa",
+      "id": "1"
+    },
+    {
+      "name": "proteinowa",
+      "id": "2"
+    },
+    {
+      "name": "humektantowa",
+      "id": "3"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Protox",
+      "type": "proteinowa",
+      "typeId": 2,
+      "img": "images/kallos-protox.jpeg",
+      "ingredients": [
+        "Aqua",
+        "Cetearyl Alcohol",
+        "Cetrimonium Chloride",
+        "Olea Europaea Oil",
+        "Cocos Nucifera Oil",
+        "Parfum",
+        "Cyclopentasiloxane",
+        "Dimethiconol",
+        "Panthenol",
+        "Hydrolized Keratin",
+        "Soluble Collagen",
+        "Sodium Hyaluronate",
+        "Citric Acid",
+        "Propylene Glycol",
+        "Benzyl Alcohol",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Algae",
+      "type": "emolientowa",
+      "typeId": 1,
+      "img": "images/kallos-algae.jpeg",
+      "ingredients": [
+        "Aqua",
+        "Cetearyl Alcohol",
+        "Cetrimonium Chloride",
+        "Olea Europaea Oil",
+        "Parfum",
+        "Citric Acid",
+        "Cyclopentasiloxane",
+        "Dimethiconol",
+        "Propylene Glycol",
+        "Fucus Vesiculosus Extract",
+        "Laminaria Digitata Extract",
+        "Spirulina Maxima Extract",
+        "Porphyra Umbilicalis Extract",
+        "Ascophyllum Nodosum Extract",
+        "Benzyl Alcohol",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Banana",
+      "type": "emolientowa",
+      "typeId": 1,
+      "img": "images/kallos-banana.jpeg",
+      "ingredients": [
+        "Aqua",
+        "Cetearyl Alcohol",
+        "Cetrimonium Chloride",
+        "Olea Europaea Oil",
+        "Parfum",
+        "Citric Acid",
+        "Cyclopentasiloxane",
+        "Dimethiconol",
+        "Propylene Glycol",
+        "Musa Sapientium Fruit Extract",
+        "Niacinamide",
+        "Calcium Pantothenate",
+        "Sodium Acsorbyl Phosphate",
+        "Tocopheryl Acetate",
+        "Pyridoxine HCI",
+        "Maltrodextrin Sodium Starch",
+        "Octenylsuccinate Silica",
+        "Benzyl Alcohol",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Aloe",
+      "type": "humektantowa",
+      "typeId": 3,
+      "img": "images/kallos-aloe.jpeg",
+      "ingredients": [
+        "Aqua",
+        "Cetearyl Alcohol",
+        "Cetrimonium Chloride",
+        "Aloe Barbadensis Leaf Juice",
+        "Parfum",
+        "Citric Acid",
+        "Cyclopentasiloxane",
+        "Propylene Glycol",
+        "Benzyl Alcohol",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Honey",
+      "type": "humektantowa",
+      "typeId": 3,
+      "img": "images/kallos-honey.jpeg",
+      "ingredients": [
+        "Aqua",
+        "Propylene Glycol",
+        "Myristyl Alcohol",
+        "Cetrimonium Chloride",
+        "Dimethicone",
+        "Mel",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone",
+        "EDTA",
+        "Ascorbic Acid",
+        "Parfum",
+        "Cl 19140",
+        "Benzyl Salicylate"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Latte",
+      "type": "proteinowa",
+      "typeId": 2,
+      "img": "images/kallos-latte.jpg",
+      "ingredients": [
+        "Aqua",
+        "Cetearyl Alcohol",
+        "Cetrimonium Chloride",
+        "Parfum",
+        "Citric Acid",
+        "Propylene Glycol",
+        "Hydrolyzed Milk Protein",
+        "Cyclopentasiloxane",
+        "Dimethiconol",
+        "Benzyl Alcohol",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Milk",
+      "type": "proteinowa",
+      "typeId": 2,
+      "img": "images/kallos-milk.jpeg",
+      "ingredients": [
+        "Aqua",
+        "Cetearyl Alcohol",
+        "Cetrimonium Chloride",
+        "Citric Acid",
+        "Propylene Glycol",
+        "Hydrolyzed Milk Protein",
+        "Cyclopentasiloxane",
+        "Dimethiconol",
+        "Parfum",
+        "Benzyl Alcohol",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Keratin",
+      "type": "proteinowa",
+      "typeId": 2,
+      "img": "images/kallos-keratin.jpeg",
+      "ingredients": [
+        "Aqua",
+        "Cetearyl Alcohol",
+        "Cetrimonium Chloride",
+        "Citric Acid",
+        "Propylene Glycol",
+        "Hydrolyzed Milk Protein",
+        "Hydrolyzed Keratin",
+        "Cyclopentasiloxane",
+        "Dimethiconol",
+        "Parfum",
+        "Benzyl Alcohol",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Chocolate",
+      "type": "proteinowa",
+      "typeId": 2,
+      "img": "images/kallos-chocolate.jpg",
+      "ingredients": [
+        "Aqua",
+        "Cetearyl Alcohol",
+        "Cetrimonium Chloride",
+        "Propylene Glycol",
+        "Hydrogenated Polysorbate",
+        "Parfum",
+        "Cyclopentasiloxane",
+        "Dimethiconol",
+        "Panthenol",
+        "Theobroma Cacao Extract",
+        "Hydrolyzed Keratin",
+        "Hydrolyzed Milk Protein",
+        "Citric Acid",
+        "Benzyl Alcohol",
+        "Methylchloroisothiazolinone",
+        "Methylisothiazolinone"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "title": "grejt",
+      "author": "Ania",
+      "rating": 5,
+      "text": "Superaśna odżywka loveee",
+      "productId": 1
+    },
+    {
+      "id": "2",
+      "title": "Very bad",
+      "author": "Maja",
+      "rating": 2,
+      "text": "Boooo, odpadły mi włosy po niej",
+      "productId": 3
+    },
+    {
+      "id": "3",
+      "title": "Ehh",
+      "author": "Skylar Grey",
+      "rating": 2,
+      "text": "tralalala",
+      "productId": 1
+    },
+    {
+      "id": "4",
+      "title": "Ehh",
+      "author": "Skylar Grey",
+      "rating": 2,
+      "text": "tralalala",
+      "productId": 4
+    },
+    {
+      "id": "5",
+      "title": "Ehh",
+      "author": "Skylar Grey",
+      "rating": 2,
+      "text": "tralalala",
+      "productId": 3
+    }
+  ]
 }

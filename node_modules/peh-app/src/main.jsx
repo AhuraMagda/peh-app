@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles.css"
 import App from "./App.jsx";
@@ -9,6 +8,7 @@ import ProductsList from "./components/ProductsList.jsx";
 import ProductCard from "./components/ProductCard.jsx";
 import About from "./components/About.jsx";
 import Test from "./components/Test.jsx";
+import { addComment } from "./components/ProductCardComments.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/test",
         element: <Test />,
+      },
+      {
+        path: "/comments",
+        action: addComment,
       },
       {
         path: "/products",

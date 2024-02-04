@@ -1,6 +1,27 @@
 import { useEffect, useState } from "react";
 import { Form } from "react-router-dom";
 
+
+export async function addComment(args) {
+  const data = await args.request.formData();
+  const author = data.get("author")
+  const title = data.get("title")
+  const text = data.get("text")
+
+  return fetch("http://localhost:3000/comments", {
+    method: "POST",
+    body: JSON.stringify({
+      title,
+      author,
+      text
+    }),
+    headers: {
+      "content-type": "application/json",
+    }
+  })
+}
+
+
 export default function ProductCardComments({ productId }) {
   const [comments, setComments] = useState();
 
@@ -24,7 +45,7 @@ export default function ProductCardComments({ productId }) {
         ))}
         <div className="p-10 border border-solid border-red-100">
           <h3>Dodaj nowy:</h3>
-          <Form className="flex flex-col">
+          <Form method="POST" action={`/comments`} className="flex flex-col">
             <label htmlFor="rating">Ocena</label>
             <select className="bg-yellow-100" name="rating" id="rating">
               <option>1</option>
@@ -33,8 +54,8 @@ export default function ProductCardComments({ productId }) {
               <option>4</option>
               <option>5</option>
             </select>
-            <label htmlFor="name">Imię:</label>
-            <input className="bg-yellow-100" type="text" name="name" id="name"></input>
+            <label htmlFor="author">Imię:</label>
+            <input className="bg-yellow-100" type="text" name="author" id="author"></input>
             <label htmlFor="title">Tytuł:</label>
             <input className="bg-yellow-100" type="text" name="title" id="title"></input>
             <label htmlFor="text">Treść</label>
