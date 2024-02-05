@@ -1,16 +1,6 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
-import ProductCardComments from "./ProductCardComments";
-import { useState } from "react";
+import { Link, Outlet, useLoaderData, useNavigate } from "react-router-dom";
 
 function ProductCard() {
-  // TODO dodać komentarze
-  // dodać ocenę
-  const [commentsVisible, setCommentsVisible] = useState(false);
-
-  const handleShowComments = () => {
-    setCommentsVisible(true);
-  };
-
   const product = useLoaderData();
   let navigate = useNavigate();
   return (
@@ -23,11 +13,11 @@ function ProductCard() {
         <p className="py-6 max-w-sm">{product.ingredients.join(", ")}</p>
       </div>
 
-      {commentsVisible ? (
-        <ProductCardComments productId={product.id} />
-      ) : (
-        <button onClick={handleShowComments}>pokaż komentarze </button>
-      )}
+      {/* schować button po kliku */}
+      <Link to={`/products/${product.type}/${product.id}/comments`}>
+        pokaż komenatrze
+      </Link>
+      <Outlet />
     </div>
   );
 }

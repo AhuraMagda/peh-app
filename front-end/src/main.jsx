@@ -8,7 +8,7 @@ import ProductsList from "./components/ProductsList.jsx";
 import ProductCard from "./components/ProductCard.jsx";
 import About from "./components/About.jsx";
 import Test from "./components/Test.jsx";
-import { addComment } from "./components/ProductCardComments.jsx";
+import ProductCardComments, { addComment } from "./components/ProductCardComments.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,10 +26,6 @@ const router = createBrowserRouter([
       {
         path: "/test",
         element: <Test />,
-      },
-      {
-        path: "/comments",
-        action: addComment,
       },
       {
         path: "/products",
@@ -62,6 +58,17 @@ const router = createBrowserRouter([
                 `http://localhost:3000/products/${params.productId}`
               );
             },
+            children: [
+              {
+                path: "/products/:typeId/:productId/comments",
+                action: addComment,
+                element: <ProductCardComments />,  
+                loader: ({params}) => {
+                  return fetch(`http://localhost:3000/comments?productId=${params.productId}`)
+                }
+              }
+            ],
+
           },
         ],
       },
