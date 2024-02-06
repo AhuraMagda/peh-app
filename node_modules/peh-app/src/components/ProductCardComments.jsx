@@ -25,8 +25,6 @@ export default function ProductCardComments() {
   const comments = useLoaderData();
   const { productType, productId } = useParams();
 
-  console.log("rererere")
-
   return (
     comments && (
       <div>
@@ -74,10 +72,7 @@ export default function ProductCardComments() {
               name="text"
               id="text"
             ></textarea>
-            <button
-              className="bg-yellow-300"
-              type="submit"
-            >
+            <button className="bg-yellow-300" type="submit">
               prześlij
             </button>
           </Form>

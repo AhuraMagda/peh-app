@@ -1,8 +1,6 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
-// TODO zmienić na navlink
-
-function Layout() {
+export default function Layout() {
   const navLinks = [
     { path: "/", name: "home" },
     { path: "/about", name: "opis" },
@@ -18,9 +16,15 @@ function Layout() {
           <ul className="flex">
             {navLinks.map((navLink) => (
               <li key={navLink.name} className="p-10">
-                <Link className="text-white" to={navLink.path}>
-                  {navLink.name}
-                </Link>
+                <NavLink key={navLink.name} to={navLink.path}>
+                  {({ isActive }) => {
+                    return (
+                      <p className={`${isActive && "text-white"}`}>
+                        {navLink.name}
+                      </p>
+                    );
+                  }}
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -31,5 +35,3 @@ function Layout() {
     </div>
   );
 }
-
-export default Layout;

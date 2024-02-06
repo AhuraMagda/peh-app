@@ -242,59 +242,15 @@
       "author": "Maja",
       "rating": 2,
       "text": "Boooo, odpadły mi włosy po niej",
-      "productId": 3
+      "productId": 1
     },
     {
       "id": "3",
       "title": "Ehh",
       "author": "Skylar Grey",
       "rating": 2,
-      "text": "tralalala",
+      "text": "No taka sobie bym powiedziała",
       "productId": 1
-    },
-    {
-      "id": "4",
-      "title": "Ehh",
-      "author": "Skylar Grey",
-      "rating": 2,
-      "text": "tralalala",
-      "productId": 4
-    },
-    {
-      "id": "5",
-      "title": "Ehh",
-      "author": "Skylar Grey",
-      "rating": 2,
-      "text": "tralalala",
-      "productId": 3
-    },
-    {
-      "id": "f25e",
-      "title": "z",
-      "author": "z",
-      "text": "z",
-      "productId": "1"
-    },
-    {
-      "id": "14a2",
-      "title": "h",
-      "author": "h",
-      "text": "h",
-      "productId": "NaN"
-    },
-    {
-      "id": "5d60",
-      "title": "f",
-      "author": "f",
-      "text": "f",
-      "productId": "1"
-    },
-    {
-      "id": "1310",
-      "title": "yy",
-      "author": "yy",
-      "text": "y",
-      "productId": "1"
     }
   ]
 }
