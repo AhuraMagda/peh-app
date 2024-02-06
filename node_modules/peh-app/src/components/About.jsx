@@ -1,7 +1,7 @@
 function About() {
   return (
     <main>
-      <h2>OPIS</h2>
+      <h2>TU JEST STRONA Z OPISEM</h2>
     </main>
   );
 }
