@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 
 export default function ProductsNav() {
-  const filters = ["emolientowe", "proteinowe", "humektantowe"];
+  const filters = ["emolientowa", "proteinowa", "humektantowa"];
 
   return (
     <main className="mt-20vh pt-10 mb-10vh">

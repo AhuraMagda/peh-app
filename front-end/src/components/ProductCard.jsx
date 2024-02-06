@@ -6,7 +6,7 @@ import {
   useOutlet,
 } from "react-router-dom";
 
-function ProductCard() {
+export default function ProductCard() {
   const product = useLoaderData();
   let navigate = useNavigate();
 
@@ -35,5 +35,3 @@ function ProductCard() {
     </div>
   );
 }
-
-export default ProductCard;
