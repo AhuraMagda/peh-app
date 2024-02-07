@@ -12,7 +12,7 @@ export default function ProductsList() {
               key={product.id}
               to={`/products/${product.type}/${product.id}`}
             >
-              <div className="flex bg-white p-2.5 w-72 m-2.5 border-2 border-solid border-yellow-400 rounded-xl">
+              <div className="flex bg-white p-2.5 w-72 m-2.5 border-2 border-solid border-detail rounded-xl">
                 <img src={`/${product.img}`} alt="kallos" className="h-40" />
                 <div className="flex justify-center items-center flex-col">
                   <h2>{product.name}</h2>

@@ -8,6 +8,7 @@ import ProductsList from "./components/ProductsList.jsx";
 import ProductCard from "./components/ProductCard.jsx";
 import About from "./components/About.jsx";
 import Test from "./components/Test.jsx";
+import NotFound from "./components/NotFound.jsx"
 import ProductCardComments, {
   addComment,
 } from "./components/ProductCardComments.jsx";
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   {
     element: <App />,
     path: "/",
+    errorElement: <NotFound />,
     children: [
       {
         path: "/",

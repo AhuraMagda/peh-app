@@ -5,10 +5,10 @@ export default function ProductsNav() {
 
   return (
     <main className="mt-20vh pt-10 mb-10vh">
-      <div className="w-full flex justify-center items-center h-20vh">
+      <div className="w-full flex-wrap justify-center items-center flex h-20vh">
         {filters.map((filter) => (
           <Link key={filter} to={`/products/${filter}`}>
-            <button className="m-5 bg-amber-400 p-2">{filter}</button>
+            <button className="m-5 bg-detail p-2">{filter}</button>
           </Link>
         ))}
         <Link to="/products">
