@@ -7,10 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        'main': '#925390'
+        'main': '#4C2948',
+        'detail': '#FBBF24'
       },
       spacing: {
-        '20vh': '20vh'
+        '20vh': '20vh',
+        '10vh': '10vh'
       }
     },
   },

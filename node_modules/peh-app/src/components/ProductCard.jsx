@@ -1,35 +1,37 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
-import ProductCardComments from "./ProductCardComments";
-import { useState } from "react";
+import {
+  Link,
+  Outlet,
+  useLoaderData,
+  useNavigate,
+  useOutlet,
+} from "react-router-dom";
 
-function ProductCard() {
-  // TODO dodać komentarze
-  // dodać ocenę
-  const [commentsVisible, setCommentsVisible] = useState(false);
-
-  const handleShowComments = () => {
-    setCommentsVisible(true);
-  };
-
+export default function ProductCard() {
   const product = useLoaderData();
   let navigate = useNavigate();
+
+  const isOutletVisible = useOutlet();
+
   return (
-    <>
+    <div className="mb-10">
       <div className="flex justify-center items-center flex-col">
         <button onClick={() => navigate(-1)}>wróć</button>
         <img src={`/${product.img}`} className="h-48" />
         <h2 className="p-2.5 text-2xl">{product.name}</h2>
-        <p className="text-xl">OCENA: 3.5⋆</p>
+        <p className="text-xl text-red-600">OCENA: 3.5⋆</p>
         <p className="py-6 max-w-sm">{product.ingredients.join(", ")}</p>
       </div>
 
-      {commentsVisible ? (
-        <ProductCardComments productId={product.id} />
+      {!isOutletVisible ? (
+        <Link to={`/products/${product.type}/${product.id}/comments`}>
+          pokaż komenatrze
+        </Link>
       ) : (
-        <button onClick={handleShowComments}>pokaż komentarze </button>
+        <Link to={`/products/${product.type}/${product.id}`}>
+          schowaj komentarze
+        </Link>
       )}
-    </>
+      <Outlet />
+    </div>
   );
 }
-
-export default ProductCard;
