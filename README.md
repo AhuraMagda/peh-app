@@ -1,2 +1,8 @@
-Project in progress...
-I'm practicing: React Router, Tailwind and JSON server
+# PEH - hair conditioner search 
+In progress...
+
+## Technologies
+- React Router
+- Tailwind
+- JSON server
+
