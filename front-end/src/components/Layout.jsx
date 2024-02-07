@@ -15,6 +15,7 @@ export default function Layout() {
     setNavVisible(prev => !prev)
   }
 
+  // TODO on big screen nav can be visible and hamburger hidden
   return (
     <div className="w-full flex justify-center items-center flex-col ">
       <header className="fixed top-0 flex justify-center items-center flex-col w-full bg-main min-h-20vh">
@@ -23,11 +24,11 @@ export default function Layout() {
             Znajdź odżywkę jakiej potrzebujesz
           </h1>
           <div onClick={toggleNav} className="absolute h-7 top-0 bottom-0 my-auto right-0 px-10">
-            <div className="w-7 h-1 bg-red-700 mb-2"></div>
-            <div className="w-7 h-1 bg-yellow-700 mb-2"></div>
-            <div className="w-7 h-1 bg-green-700"></div>
+            <div className="w-9 h-1 bg-detail mb-2"></div>
+            <div className="w-9 h-1 bg-detail mb-2"></div>
+            <div className="w-9 h-1 bg-detail"></div>
           </div>
-          <ul className={`flex flex-col bg-red-200 absolute top-20vh right-0 ${!navVisible && "translate-x-full"} transition-all`}>
+          <ul className={`flex flex-col items-center bg-main absolute top-20vh right-0 ${!navVisible && "translate-x-full"} transition-all`}>
             {navLinks.map((navLink) => (
               <li key={navLink.name} className="p-10">
                 <NavLink key={navLink.name} to={navLink.path}>
