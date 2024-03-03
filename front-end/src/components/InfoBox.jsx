@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function HomePageInfoBox({ boxData }) {
+export default function InfoBox({ boxData }) {
   return (
     <div
       key={boxData.header}
