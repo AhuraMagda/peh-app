@@ -1,7 +1,4 @@
-import { Link } from "react-router-dom";
-
-function Home() {
-  const tables = [
+export const HOME_PAGE_BOXES_DATA = [
     {
       header: "Czym jest PEH?",
       description:
@@ -23,23 +20,3 @@ function Home() {
       btnText: "Wyszukaj odżywkę",
     },
   ];
-
-  return (
-    <main className="mt-20vh pt-10">
-      {tables.map((table) => (
-        <div
-          key={table.header}
-          className="border-2 border-solid border-main rounded-3xl p-10 mt-5"
-        >
-          <h2 className="text-main text-2xl">{table.header}</h2>
-          <p className="max-w-lg py-5">{table.description}</p>
-          <Link to={table.btnPath}>
-            <button className="bg-main border border-solid border-white px-5 py-3 rounded-3xl text-white hover:bg-white hover:text-main hover:border-main transition-all">{table.btnText}</button>
-          </Link>
-        </div>
-      ))}
-    </main>
-  );
-}
-
-export default Home;

@@ -1,18 +1,16 @@
 import ReactDOM from "react-dom/client";
 import "./styles.css";
-import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./components/Home.jsx";
+import HomePage from "./views/HomePage.jsx";
 import ProductsNav from "./components/ProductsNav.jsx";
-import ProductsList from "./components/ProductsList.jsx";
+import ProductsList from "./views/ProductsList.jsx";
 import ProductCard from "./components/ProductCard.jsx";
-import About from "./components/About.jsx";
-import Test from "./components/Test.jsx";
+import AboutPage from "./views/AboutPage.jsx";
+import TestPage from "./views/TestPage.jsx";
 import NotFound from "./components/NotFound.jsx";
 import ProductCardComments, {
   addComment,
 } from "./components/ProductCardComments.jsx";
-import { BACK_END_URL } from "../constants/api.js";
 import Layout from "./components/Layout.jsx";
 import { productsListLoader } from "../api/productsListLoader.js";
 import { productCardLoader } from "../api/productCardLoader.js";
@@ -31,15 +29,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />,
+        element: <HomePage />,
       },
       {
         path: "/about",
-        element: <About />,
+        element: <AboutPage />,
       },
       {
         path: "/test",
-        element: <Test />,
+        element: <TestPage />,
       },
       {
         path: "/products",

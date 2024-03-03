@@ -8,6 +8,7 @@ import {
 
 export default function ProductCard() {
   const product = useLoaderData();
+  // TODO after opening the comments "wroc" backtracts to no comments
   let navigate = useNavigate();
 
   const isOutletVisible = useOutlet();
