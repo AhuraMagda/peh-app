@@ -19,7 +19,7 @@
       "name": "Protox",
       "type": "proteinowa",
       "typeId": 2,
-      "img": "images/kallos-protox.jpeg",
+      "img": "../images/kallos-protox.jpeg",
       "ingredients": [
         "Aqua",
         "Cetearyl Alcohol",
@@ -45,7 +45,7 @@
       "name": "Algae",
       "type": "emolientowa",
       "typeId": 1,
-      "img": "images/kallos-algae.jpeg",
+      "img": "../images/kallos-algae.jpeg",
       "ingredients": [
         "Aqua",
         "Cetearyl Alcohol",
@@ -71,7 +71,7 @@
       "name": "Banana",
       "type": "emolientowa",
       "typeId": 1,
-      "img": "images/kallos-banana.jpeg",
+      "img": "../images/kallos-banana.jpeg",
       "ingredients": [
         "Aqua",
         "Cetearyl Alcohol",
@@ -100,7 +100,7 @@
       "name": "Aloe",
       "type": "humektantowa",
       "typeId": 3,
-      "img": "images/kallos-aloe.jpeg",
+      "img": "../images/kallos-aloe.jpeg",
       "ingredients": [
         "Aqua",
         "Cetearyl Alcohol",
@@ -120,7 +120,7 @@
       "name": "Honey",
       "type": "humektantowa",
       "typeId": 3,
-      "img": "images/kallos-honey.jpeg",
+      "img": "../images/kallos-honey.jpeg",
       "ingredients": [
         "Aqua",
         "Propylene Glycol",
@@ -142,7 +142,7 @@
       "name": "Latte",
       "type": "proteinowa",
       "typeId": 2,
-      "img": "images/kallos-latte.jpg",
+      "img": "../images/kallos-latte.jpg",
       "ingredients": [
         "Aqua",
         "Cetearyl Alcohol",
@@ -163,7 +163,7 @@
       "name": "Milk",
       "type": "proteinowa",
       "typeId": 2,
-      "img": "images/kallos-milk.jpeg",
+      "img": "../images/kallos-milk.jpeg",
       "ingredients": [
         "Aqua",
         "Cetearyl Alcohol",
@@ -184,7 +184,7 @@
       "name": "Keratin",
       "type": "proteinowa",
       "typeId": 2,
-      "img": "images/kallos-keratin.jpeg",
+      "img": "../images/kallos-keratin.jpeg",
       "ingredients": [
         "Aqua",
         "Cetearyl Alcohol",
@@ -206,7 +206,7 @@
       "name": "Chocolate",
       "type": "proteinowa",
       "typeId": 2,
-      "img": "images/kallos-chocolate.jpg",
+      "img": "../images/kallos-chocolate.jpg",
       "ingredients": [
         "Aqua",
         "Cetearyl Alcohol",

@@ -8,19 +8,29 @@ import ProductsList from "./components/ProductsList.jsx";
 import ProductCard from "./components/ProductCard.jsx";
 import About from "./components/About.jsx";
 import Test from "./components/Test.jsx";
-import NotFound from "./components/NotFound.jsx"
+import NotFound from "./components/NotFound.jsx";
 import ProductCardComments, {
   addComment,
 } from "./components/ProductCardComments.jsx";
+import { BACK_END_URL } from "../constants/api.js";
+import Layout from "./components/Layout.jsx";
+import { productsListLoader } from "../api/productsListLoader.js";
+import { productCardLoader } from "../api/productCardLoader.js";
+import { commentsLoader } from "../api/commentsLoader.js";
+
+// WPROWADZIC ZMIANY Z KURSU
+// 1 STRUKTURA FOLDEROW
+// WYCIAGANIE FUNKCJI
+// ROUTER
 
 const router = createBrowserRouter([
   {
-    element: <App />,
-    path: "/",
+    element: <Layout />,
+    path: "",
     errorElement: <NotFound />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
@@ -36,39 +46,20 @@ const router = createBrowserRouter([
         element: <ProductsNav />,
         children: [
           {
-            path: "/products",
+            path: "/products/:typeId?",
             element: <ProductsList />,
-            loader: () => {
-              return fetch(`http://localhost:3000/products`);
-            },
-          },
-          {
-            path: "/products/:typeId",
-            element: <ProductsList />,
-            loader: ({ params }) => {
-              return fetch(
-                `http://localhost:3000/products?type=${params.typeId}`
-              );
-            },
+            loader: productsListLoader,
           },
           {
             path: "/products/:typeId/:productId",
             element: <ProductCard />,
-            loader: ({ params }) => {
-              return fetch(
-                `http://localhost:3000/products/${params.productId}`
-              );
-            },
+            loader: productCardLoader,
             children: [
               {
                 path: "/products/:typeId/:productId/comments",
                 action: addComment,
                 element: <ProductCardComments />,
-                loader: ({ params }) => {
-                  return fetch(
-                    `http://localhost:3000/comments?productId=${params.productId}`
-                  );
-                },
+                loader: commentsLoader,
               },
             ],
           },
